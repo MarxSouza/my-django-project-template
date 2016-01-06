@@ -104,4 +104,3 @@ if DEBUG:
 # Production
 else:
     from settings.production import *
-    
