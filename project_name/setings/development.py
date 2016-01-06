@@ -1,6 +1,7 @@
 from .settings import *
 
 INSTALLED_APPS += ('debug-toolbar','extensions',)
+
 DATABASES = {
 	'default': {
         'ENGINE': 'django.db.backends.sqlite3',
