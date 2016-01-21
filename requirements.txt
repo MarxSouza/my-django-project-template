@@ -1,12 +1,1 @@
-# All
-Django
-django-crispy-forms
-Pillow
-Markdown
-
-# Development
-django-extensions
-django-debug-toolbar
-
-# Production
-django-compressor
+Django >= 1.9.1

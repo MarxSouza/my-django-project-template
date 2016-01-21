@@ -19,5 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
-    handler404 = 'core.views.e404'
+    handler404 = 'apps.core.views.error404'
 ]

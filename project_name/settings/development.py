@@ -1,6 +1,6 @@
-from .settings import *
+from .base import *
 
-INSTALLED_APPS += ('debug-toolbar','extensions',)
+INSTALLED_APPS += ['debug_toolbar','extensions']
 
 DATABASES = {
 	'default': {
