@@ -18,6 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-
-    handler404 = 'apps.core.views.error404'
 ]
+
+handler404 = '{{ project_name }}.views.error404'

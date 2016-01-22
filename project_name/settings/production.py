@@ -1,14 +1,17 @@
 from .base import *
 
-INSTALLED_APPS += ['compressor']
+DEBUG = False
 
-ALLOWED_HOSTS += ['127.0.0.1']
+ALLOWED_HOSTS = ['{{ project_name }}.com.br']
+
+INSTALLED_APPS += ['compressor',]
 
 DATABASES = {
-    'default': {
+        'default': {
         'ENGINE': 'django.db.backends.',
-        'NAME': '{{ project_name }}',
-        'USER':'', 'PASS':'',
-        'HOST':'', 'PORT':'3306',
-    }
+        'NAME': '{{ project_name }}',   
+        'USER': '{{ project_name }}', 
+        'PASS': '', 
+        'HOST': '', 
+    },
 }

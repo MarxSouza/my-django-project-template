@@ -1,10 +1,15 @@
 from .base import *
 
-INSTALLED_APPS += ['debug_toolbar','extensions']
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+INSTALLED_APPS += ['extensions', 'debug_toolbar',]
+
+ALLOWED_HOSTS = []
 
 DATABASES = {
-	'default': {
+        'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),  
+    },
 }
